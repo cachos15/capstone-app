@@ -26,7 +26,7 @@ const Onboarding = ({ navigation }) => {
     await AsyncStorage.setItem('firstName', firstName);
     await AsyncStorage.setItem('email', email);
     await AsyncStorage.setItem('isLoggedIn', 'true');
-    navigation.navigate('Profile');
+    navigation.navigate('Home');
   }
 
   return (

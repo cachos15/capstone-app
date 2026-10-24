@@ -25,11 +25,16 @@ const Header = ({
             resizeMode="contain"
         />
         {showProfilePicture && (
-          <Image 
-            style={styles.profileImage}
-            source={require('../assets/Profile.png')}
-            resizeMode="contain"
-          />
+          
+          <Pressable
+            onPress={() => navigation.navigate('Profile')}
+          >
+            <Image 
+              style={styles.profileImage}
+              source={require('../assets/Profile.png')}
+              resizeMode="contain"
+            />
+          </Pressable>
         )}
     </View>
   );
